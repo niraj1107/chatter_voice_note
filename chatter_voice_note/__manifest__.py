@@ -1,7 +1,9 @@
 {
-    "name": "Voice Note in Chatter",
+    "name": "Chatter Voice Note",
     "version": "17.0.1.0.0",
     "summary": "Record voice note from chatter",
+    "author": "Niraj Mamtora",
+    "maintainer": "Niraj Mamtora",
     "depends": ["mail"],
     "assets": {
         "web.assets_backend": [
@@ -10,7 +12,10 @@
         ],
     },
     "data": [
-    
+
     ],
-    "installable": True,
+    'license': 'LGPL-3',
+    'installable': True,
+    'auto_install': False,
+    'application': False,
 }
