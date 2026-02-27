@@ -10,7 +10,7 @@
         ],
     },
     "data": [
-        # "views/voice_note_template.xml",
+    
     ],
     "installable": True,
 }
