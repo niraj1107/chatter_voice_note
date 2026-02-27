@@ -60,13 +60,12 @@ patch(Chatter.prototype, {
                 const attachmentId = await this.orm.create("ir.attachment", [{
                     name: filename,
                     datas: base64.split(",")[1],
-                    res_model: this.env.model.config.resModel,
-                    res_id: this.env.model.config.resId,
+                    res_model: this.props.record.resModel,
+                    res_id: this.props.record.resId,
                     mimetype: "audio/mpeg",
                 }]);
 
-
-                await this.env.model.root.load();
+                await this.props.record.model.root.load();
             };
 
             this._mediaRecorder.start();
