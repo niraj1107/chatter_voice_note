@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="voice_note_button" inherit_id="mail.ChatterTopbar" name="Voice Note Button">
+        <xpath expr="//div[contains(@class,'o_ChatterTopbar_controllers')]" position="inside">
+            <button type="button" class="btn btn-secondary o_voice_record_btn">
+                🎤 Record Voice
+            </button>
+        </xpath>
+    </template>
+</odoo>
